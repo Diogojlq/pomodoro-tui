@@ -1,7 +1,9 @@
 from textual.app import App, ComposeResult
 from textual.widgets import Static
+from textual.screen import Screen
 
 class Timer(Static):
+
     def on_mount(self):
         self.seconds = 10
         self.update(f"⏳ {self.seconds}")
