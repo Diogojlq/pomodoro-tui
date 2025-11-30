@@ -50,6 +50,24 @@ class TimerScreen(Screen):
         if event.button.id == "btn-back":
             self.dismiss()
 
+class MenuScreen(Screen):
+    def compose(self) -> ComposeResult:
+        yield Header()
+        with Container(id="box"):
+            yield TimeSelector()
+        yield Footer()
+
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        times = {
+            "btn-25": 25 * 60,
+            "btn-30": 30 * 60,
+            "btn-45": 45 * 60
+        }
+        selected_time = times.get(event.button.id)
+        
+        if selected_time:
+            self.app.push_screen(TimerScreen(selected_time))
+            
 class TimerApp(App):
     def compose(self) -> ComposeResult:
         yield TimerDisplay()
