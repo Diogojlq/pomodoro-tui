@@ -4,7 +4,6 @@ from textual.containers import Container
 from textual.screen import Screen
 
 class TimerDisplay(Static):
-    """Screen for the timer display."""
     def __init__(self, total_seconds):
         super().__init__()
         self.total_seconds = total_seconds
@@ -17,7 +16,7 @@ class TimerDisplay(Static):
     def tick(self):
         self.total_seconds -= 1
         if self.total_seconds <= 0:
-            self.update("Time is over!")
+            self.update("Time's Up!")
             if self.timer_interval:
                 self.timer_interval.stop()
         else:
