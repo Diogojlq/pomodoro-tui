@@ -35,8 +35,6 @@ class TimeSelector(Static):
             yield Button("45 Min", id="btn-45", variant="error")
 
 class TimerScreen(Screen):
-    """Screen for the."""
-    
     def __init__(self, seconds):
         super().__init__()
         self.seconds = seconds
@@ -45,7 +43,7 @@ class TimerScreen(Screen):
         yield Header()
         with Container(id="box"):
             yield TimerDisplay(self.seconds)
-            yield Button("Cancelar / Voltar", id="btn-back", variant="default")
+            yield Button("Cancel", id="btn-back", variant="default")
         yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
