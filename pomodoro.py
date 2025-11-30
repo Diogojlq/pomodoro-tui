@@ -27,10 +27,8 @@ class TimerDisplay(Static):
         self.update(f"{minutes:02d}:{seconds:02d}")
 
 class TimeSelector(Static):
-    """Buttons for setting the time."""
     def compose(self) -> ComposeResult:
-        yield Static("How much time you want to focus?", classes="title")
-        
+        yield Static("Select Focus Duration", classes="title")
         with Container(classes="buttons-container"):
             yield Button("25 Min", id="btn-25", variant="success")
             yield Button("30 Min", id="btn-30", variant="warning")
