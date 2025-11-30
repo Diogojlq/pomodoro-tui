@@ -67,10 +67,12 @@ class MenuScreen(Screen):
         
         if selected_time:
             self.app.push_screen(TimerScreen(selected_time))
-            
-class TimerApp(App):
-    def compose(self) -> ComposeResult:
-        yield TimerDisplay()
+
+class PomodoroApp(App):
+    CSS_PATH = "style.css"
+
+    def on_mount(self) -> None:
+        self.push_screen(MenuScreen())
 
 if __name__ == "__main__":
-    TimerApp().run()
+    PomodoroApp().run()
