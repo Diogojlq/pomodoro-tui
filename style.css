@@ -4,5 +4,7 @@ Screen {
 }
 
 .buttons-container {
+    background: #4169e1;
     align: center middle;
 }
+
