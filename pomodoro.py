@@ -30,9 +30,9 @@ class TimeSelector(Static):
     def compose(self) -> ComposeResult:
         yield Static("Select Focus Duration", classes="title")
         with Container(classes="buttons-container"):
-            yield Button("25 Min", id="btn-25", variant="success")
-            yield Button("30 Min", id="btn-30", variant="warning")
-            yield Button("45 Min", id="btn-45", variant="error")
+            yield Button("25 Min", id="btn-25")
+            yield Button("30 Min", id="btn-30")
+            yield Button("45 Min", id="btn-45")
 
 class TimerScreen(Screen):
     def __init__(self, seconds):
@@ -69,7 +69,7 @@ class MenuScreen(Screen):
             self.app.push_screen(TimerScreen(selected_time))
 
 class PomodoroApp(App):
-    CSS_PATH = "style.css"
+    CSS_PATH = "style.css"      
 
     def on_mount(self) -> None:
         self.push_screen(MenuScreen())
