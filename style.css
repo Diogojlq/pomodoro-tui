@@ -1,6 +1,7 @@
 Screen {
     background: #4D3288;
     align: center middle;
+    border: panel;
 }
 
 Grid {
