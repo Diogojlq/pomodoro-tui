@@ -1,23 +1,23 @@
 Screen {
-    background: #11112b;
+    background: #f9a87b;
     align: center middle;
 }
 
 Grid {
-    background: #4169e1;
+    background: #4D3288;
     align: center middle;
     grid-size: 3 1;
 }
 
 #btn-25 {
-  border: heavy white 
+  background: #f9a87b;
 }
 
 #btn-30 {
-  border: heavy white
+  background: #f9a87b;
 }
 
 #btn-45 {
-  border: heavy white
+  background: #f9a87b;
 }
 
