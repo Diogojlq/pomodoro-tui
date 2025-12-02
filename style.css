@@ -7,7 +7,7 @@ Screen {
 Grid {
     background: #4D3288;
     align: center middle;
-    grid-size: 3 1;
+    grid-size: 1 3;
 }
 
 #btn-25 {
