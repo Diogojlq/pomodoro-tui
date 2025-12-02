@@ -30,9 +30,9 @@ class TimeSelector(Static):
     def compose(self) -> ComposeResult:
         yield Static("Select Focus Duration", classes="title")
         yield Grid(
-             Button("25 Min"),
-             Button("30 Min"),
-             Button("45 Min")
+             Button("25 Min", id="btn-25"),
+             Button("30 Min", id="btn-30"),
+             Button("45 Min", id="btn-45")
              )
 
 class TimerScreen(Screen):
