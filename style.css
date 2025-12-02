@@ -3,9 +3,10 @@ Screen {
     align: center middle;
 }
 
-.buttons-container {
+Grid {
     background: #4169e1;
     align: center middle;
+    grid-size: 3 1;
 }
 
 #btn-25 {
