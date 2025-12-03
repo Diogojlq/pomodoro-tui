@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Static, Button, Header, Footer
+from textual.widgets import Static, Button, Footer
 from textual.containers import Container, Grid
 from textual.screen import Screen
 
@@ -28,7 +28,6 @@ class TimerDisplay(Static):
 
 class TimeSelector(Static):
     def compose(self) -> ComposeResult:
-        yield Static("Select Focus Duration", classes="title")
         yield Grid(
              Button("25 Min", id="btn-25"),
              Button("30 Min", id="btn-30"),
@@ -41,7 +40,6 @@ class TimerScreen(Screen):
         self.seconds = seconds
 
     def compose(self) -> ComposeResult:
-        yield Header()
         with Container(id="box"):
             yield TimerDisplay(self.seconds)
             yield Button("Cancel", id="btn-back", variant="default")
@@ -53,7 +51,6 @@ class TimerScreen(Screen):
 
 class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
-        yield Header()
         with Container(id="box"):
             yield TimeSelector()
         yield Footer()
