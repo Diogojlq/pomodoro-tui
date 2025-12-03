@@ -52,6 +52,10 @@ class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
         with Grid(id="main-grid"):
             yield TimeSelector()
+            yield Input(
+                placeholder="Custom time in minutes", 
+                id="input-link"
+            )
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
