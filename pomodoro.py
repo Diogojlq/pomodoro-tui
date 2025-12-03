@@ -31,8 +31,8 @@ class TimeSelector(Static):
         yield Grid(
              Button("25 Min", id="btn-25"),
              Button("30 Min", id="btn-30"),
-             Button("45 Min", id="btn-45")
-             )
+             Button("45 Min", id="btn-45"),
+             id="time-grid")
 
 class TimerScreen(Screen):
     def __init__(self, seconds):

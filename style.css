@@ -4,7 +4,7 @@ Screen {
     border: panel;
 }
 
-Grid {
+#time-grid {
     background: #211832;
     align: center middle;
     grid-size: 1 3;
