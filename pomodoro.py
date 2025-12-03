@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Static, Button, Input
+from textual.widgets import Static, Button
 from textual.containers import Container, Grid
 from textual.screen import Screen
 
@@ -32,10 +32,6 @@ class TimeSelector(Static):
              Button("25 Min", id="btn-25"),
              Button("30 Min", id="btn-30"),
              Button("45 Min", id="btn-45"),
-             Input(
-                placeholder="Paste the YouTube link here...", 
-                id="input-link"
-            ),
              id="time-grid")
 
 class TimerScreen(Screen): # when playing the timer
