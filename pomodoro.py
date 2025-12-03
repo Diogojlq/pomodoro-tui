@@ -34,7 +34,7 @@ class TimeSelector(Static):
              Button("45 Min", id="btn-45"),
              id="time-grid")
 
-class TimerScreen(Screen):
+class TimerScreen(Screen): # when playing the timer
     def __init__(self, seconds):
         super().__init__()
         self.seconds = seconds
