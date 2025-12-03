@@ -1,7 +1,7 @@
 Screen {
     background: #211832;
     align: center middle;
-    border: panel;
+    border: #456882 panel;
 }
 
 #main-grid {
