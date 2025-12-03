@@ -4,6 +4,13 @@ Screen {
     border: panel;
 }
 
+#main-grid {
+    grid-size: 1 2;
+    align: center middle;
+    height: 100%;
+    width: 100%;
+}
+
 #time-grid {
     background: #211832;
     align: center middle;
