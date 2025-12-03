@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Static, Button, Footer
+from textual.widgets import Static, Button
 from textual.containers import Container, Grid
 from textual.screen import Screen
 
@@ -43,7 +43,6 @@ class TimerScreen(Screen):
         with Container(id="box"):
             yield TimerDisplay(self.seconds)
             yield Button("Cancel", id="btn-back", variant="default")
-        yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-back":
@@ -53,7 +52,6 @@ class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
         with Container(id="box"):
             yield TimeSelector()
-        yield Footer()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
