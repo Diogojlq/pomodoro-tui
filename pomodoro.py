@@ -32,6 +32,10 @@ class TimeSelector(Static):
              Button("25 Min", id="btn-25"),
              Button("30 Min", id="btn-30"),
              Button("45 Min", id="btn-45"),
+             Input(
+                placeholder="Paste the YouTube link here...", 
+                id="input-link"
+            ),
              id="time-grid")
 
 class TimerScreen(Screen): # when playing the timer
@@ -52,10 +56,7 @@ class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
         with Grid(id="main-grid"):
             yield TimeSelector()
-            yield Input(
-                placeholder="Custom time in minutes", 
-                id="input-link"
-            )
+
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
