@@ -9,7 +9,7 @@ class TimerDisplay(Static):
         super().__init__()
         self.total_seconds = total_seconds
         self.timer_interval = None
-        self.figlet_font = "big"
+        self.figlet_font = "banner3-D"
 
     def on_mount(self):
         self.update_timer()
