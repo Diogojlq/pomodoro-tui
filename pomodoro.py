@@ -32,7 +32,7 @@ class TimeSelector(Static):
              Button("25 Min", id="btn-25"),
              Button("30 Min", id="btn-30"),
              Button("45 Min", id="btn-45"),
-             id="time-grid")
+             id="time-selector")
 
 class TimerScreen(Screen): # when playing the timer
     def __init__(self, seconds):
@@ -53,7 +53,6 @@ class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
         with Grid(id="main-grid"):
             yield TimeSelector()
-
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
