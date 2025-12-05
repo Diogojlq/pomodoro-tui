@@ -4,6 +4,13 @@ Screen {
     border: #456882 panel;
 }
 
+TimerDisplay {
+    color: #FFFFFF;
+    align: center middle;
+    width: auto;
+    height: auto;
+}
+
 #main-grid {
     grid-size: 1 2;
     align: center middle;
@@ -18,9 +25,8 @@ Screen {
 }
 
 #timer-grid {
-    background: #211832;
-    align: center middle;
-    grid-size: 1 2;
+    layout: grid;
+    align: center middle; 
     height: 100%;
     width: 100%;
 }
