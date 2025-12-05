@@ -42,8 +42,9 @@ class TimerScreen(Screen): # when playing the timer
     def compose(self) -> ComposeResult:
         yield Grid(
             TimerDisplay(self.seconds),
-            Button("Cancel", id="btn-back", variant="default"),
-            id= "timer-grid")
+            Button("Stop", id="btn-back", variant="default"),
+            id= "timer-grid"
+            )
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "btn-back":
