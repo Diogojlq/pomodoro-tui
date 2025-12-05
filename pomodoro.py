@@ -2,12 +2,14 @@ from textual.app import App, ComposeResult
 from textual.widgets import Static, Button
 from textual.containers import Container, Grid
 from textual.screen import Screen
+import pyfiglet
 
 class TimerDisplay(Static):
     def __init__(self, total_seconds):
         super().__init__()
         self.total_seconds = total_seconds
         self.timer_interval = None
+        self.figlet_font = "big"
 
     def on_mount(self):
         self.update_timer()
@@ -24,7 +26,14 @@ class TimerDisplay(Static):
 
     def update_timer(self):
         minutes, seconds = divmod(self.total_seconds, 60)
-        self.update(f"{minutes:02d}:{seconds:02d}")
+        time_string = f"{minutes:02d}:{seconds:02d}"
+        
+        ascii_art = pyfiglet.figlet_format(
+            time_string, 
+            font=self.figlet_font
+        )
+        
+        self.update(ascii_art)
 
 class TimeSelector(Static):
     def compose(self) -> ComposeResult:
