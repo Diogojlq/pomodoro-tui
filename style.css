@@ -9,7 +9,8 @@ TimerDisplay {
     align: center middle;
     width: auto;
     height: auto;
-}
+    padding: 1 5;
+  }
 
 #main-grid {
     grid-size: 1 2;
