@@ -7,10 +7,6 @@ Screen {
 TimerDisplay {
     color: #FFFFFF;
     align: center middle;
-    width: auto;
-    height: auto;
-    padding: 1 5;
-    height: 100;
   }
 
 #main-grid {
