@@ -52,8 +52,8 @@ class TimerScreen(Screen): # when playing the timer
 
     def compose(self) -> ComposeResult:
         yield Grid(
-            TimerDisplay(self.seconds)
-            )
+            TimerDisplay(self.seconds),
+            id="timer-grid")
 
     def action_quit_timer(self) -> None:
             self.dismiss()
