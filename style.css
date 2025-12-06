@@ -7,6 +7,9 @@ Screen {
 TimerDisplay {
     color: #FFFFFF;
     align: center middle;
+    height: auto;
+    width: 100%;
+    text-align: center;
   }
 
 #main-grid {
@@ -23,7 +26,6 @@ TimerDisplay {
 }
 
 #timer-grid {
-    layout: grid;
     align: center middle; 
     height: 100%;
     width: 100%;
