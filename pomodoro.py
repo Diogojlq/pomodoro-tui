@@ -44,6 +44,8 @@ class TimeSelector(Static):
              id="time-selector")
 
 class TimerScreen(Screen): # when playing the timer
+    BINDINGS = [("enter", "quit_timer", "Quit Timer")]
+    
     def __init__(self, seconds):
         super().__init__()
         self.seconds = seconds
