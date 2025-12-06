@@ -55,8 +55,7 @@ class TimerScreen(Screen): # when playing the timer
             TimerDisplay(self.seconds)
             )
 
-    def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "btn-back":
+    def action_quit_timer(self) -> None:
             self.dismiss()
 
 class MenuScreen(Screen):
