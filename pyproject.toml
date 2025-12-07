@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pomodoro-tui"
+version = "0.1.0"
+authors = [
+    { name="Diogo", email="diogojlq@gmail.com" },
+]
+description = "The cleaner Pomodoro app i could build :)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "textual>=0.50.0",
+    "pyfiglet",         
+]
+
+[project.scripts]
+pomodoro = "app:PomodoroApp.run"
