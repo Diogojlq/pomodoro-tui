@@ -80,5 +80,8 @@ class PomodoroApp(App):
     def on_mount(self) -> None:
         self.push_screen(MenuScreen())
 
+def main():
+    PomodoroApp().run()
+    
 if __name__ == "__main__":
     PomodoroApp().run()

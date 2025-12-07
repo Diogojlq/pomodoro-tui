@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.scripts]
-pomodoro = "app:PomodoroApp.run"
+pomodoro = "pomodoro:main"
