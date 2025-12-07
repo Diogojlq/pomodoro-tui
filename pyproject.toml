@@ -16,5 +16,8 @@ dependencies = [
     "pyfiglet",         
 ]
 
+[tool.setuptools.package-data]
+"*" = ["*.css"]
+
 [project.scripts]
 pomodoro = "pomodoro:main"
