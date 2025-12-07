@@ -60,7 +60,7 @@ class TimerScreen(Screen): # when playing the timer
 
 class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
-        with Container(id="main-grid"):
+        with Container():
             yield TimeSelector()
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
