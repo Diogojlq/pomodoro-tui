@@ -82,6 +82,6 @@ class PomodoroApp(App):
 
 def main():
     PomodoroApp().run()
-    
+
 if __name__ == "__main__":
-    PomodoroApp().run()
+    main()
