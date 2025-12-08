@@ -93,6 +93,6 @@ class MenuScreen(Screen):
 
 ### License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**. See the LICENSE.md file for details.
 
 You are free to use, modify, and distribute the code, provided that you maintain the copyright attribution and the license notice included.
