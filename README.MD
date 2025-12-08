@@ -78,6 +78,7 @@ class TimeSelector(Static):
 ```
 * And here
 
+```
 class MenuScreen(Screen):
     def compose(self) -> ComposeResult:
         with Container():
@@ -89,3 +90,4 @@ class MenuScreen(Screen):
             "btn-30": 30 * 60,
             "btn-45": 45 * 60
         }
+```
