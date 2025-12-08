@@ -85,9 +85,9 @@ class MenuScreen(Screen):
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
-            "btn-25": 25 * 60,
-            "btn-30": 30 * 60,
-            "btn-45": 45 * 60
+            "btn-25": 25 * 60, << 
+            "btn-30": 30 * 60, <<
+            "btn-45": 45 * 60  <<
         }
 ```
 
