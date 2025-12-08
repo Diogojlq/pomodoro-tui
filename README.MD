@@ -2,15 +2,41 @@
 
 This is a simple Pomodoro Timer application that runs in your terminal.
 
-## Usage
+## Installation
 
-To run the application, execute the `pomodoro.py` file:
+I recommend using pipx to install this application. pipx installs Python applications into isolated environments, making them accessible system-wide without cluttering your main Python environment or the project's dependencies.
 
-```bash
-python pomodoro.py
+1. Get the Code (Cloning the Repository)
+First, you need to clone the repository to your local machine:
+```
+git clone https://github.com/Diogojlq/pomodoro-tui
+cd pomodoro-tui
+```
+2. Prerequisites: Install pipx
+If you don't have pipx installed yet, you need to install it globally using pip:
+```
+pip install --user pipx
+```
+After installation, ensure that the applications installed by pipx are accessible in your system's PATH. This usually requires running:
+
+```
+python -m pipx ensurepath
+```
+Note: You may need to restart your terminal session (or open a new one) for the pipx command to become available after running ensurepath.
+
+3. Install the Application:
+Since you are installing from the local project directory (which you cloned in Step 1), use the following command while you are inside the your-repo-name folder:
+
+```
+pipx install .
 ```
 
-Follow the on-screen instructions to start, pause, or reset the timer.
+4. Usage:
+You can now run the application's command from any directory in your terminal:
+
+```
+pomodoro
+```
 
 ## For devs:
 ### How to change timer font
