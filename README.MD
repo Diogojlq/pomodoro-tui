@@ -91,3 +91,9 @@ class MenuScreen(Screen):
             "btn-45": 45 * 60
         }
 ```
+
+### License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+You are free to use, modify, and distribute the code, provided that you maintain the copyright attribution and the license notice included.
