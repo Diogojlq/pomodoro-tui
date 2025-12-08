@@ -19,7 +19,7 @@ TimerDisplay {
 }
 
 #time-selector {
-    background: #21323e;
+    background: #000000;
     align: center middle;
     grid-size: 1 3;
 }
