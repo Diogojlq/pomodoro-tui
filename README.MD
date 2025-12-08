@@ -6,13 +6,13 @@ This is a simple Pomodoro Timer application that runs in your terminal.
 
 I recommend using pipx to install this application. pipx installs Python applications into isolated environments, making them accessible system-wide without cluttering your main Python environment or the project's dependencies.
 
-1. Get the Code (Cloning the Repository)
+1. Get the Code (Cloning the Repository):
 First, you need to clone the repository to your local machine:
 ```
 git clone https://github.com/Diogojlq/pomodoro-tui
 cd pomodoro-tui
 ```
-2. Prerequisites: Install pipx
+2. Install pipx
 If you don't have pipx installed yet, you need to install it globally using pip:
 ```
 pip install --user pipx
