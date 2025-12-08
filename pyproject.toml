@@ -20,4 +20,4 @@ dependencies = [
 "*" = ["*.css"]
 
 [project.scripts]
-pomodoro = "pomodoro.pomodoro:main"
+pmdr = "pomodoro.pomodoro:main"
