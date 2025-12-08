@@ -6,13 +6,13 @@ This is a simple Pomodoro Timer application that runs in your terminal.
 
 I recommend using pipx to install this application. pipx installs Python applications into isolated environments, making them accessible system-wide without cluttering your main Python environment or the project's dependencies.
 
-1. Get the Code (Cloning the Repository)
+1. Get the Code (Cloning the Repository):
 First, you need to clone the repository to your local machine:
 ```
 git clone https://github.com/Diogojlq/pomodoro-tui
 cd pomodoro-tui
 ```
-2. Prerequisites: Install pipx
+2. Install pipx
 If you don't have pipx installed yet, you need to install it globally using pip:
 ```
 pip install --user pipx
@@ -86,14 +86,14 @@ class MenuScreen(Screen):
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         times = {
-            "btn-25": 25 * 60,
-            "btn-30": 30 * 60,
-            "btn-45": 45 * 60
+            "btn-25": 25 * 60, << 
+            "btn-30": 30 * 60, <<
+            "btn-45": 45 * 60  <<
         }
 ```
 
 ### License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**. See the LICENSE.md file for details.
 
 You are free to use, modify, and distribute the code, provided that you maintain the copyright attribution and the license notice included.
